@@ -8,8 +8,8 @@ This is my solution to the [Time tracking dashboard challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/okayishmael/time-tracking-dashboard)
-- Live Site URL: [Add live site URL here](https://okayishmael.github.io/time-tracking-dashboard/)
+- Solution URL: [Github repo](https://github.com/okayishmael/time-tracking-dashboard)
+- Live Site URL: [Github Live page](https://okayishmael.github.io/time-tracking-dashboard/)
 
 ## My process
 
