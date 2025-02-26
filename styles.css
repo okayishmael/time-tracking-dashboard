@@ -234,7 +234,7 @@ h2 {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-top: 2rem;
+    margin-top: 1rem;
     gap: 1rem;
   }
   .data-contents {
@@ -254,5 +254,10 @@ h2 {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+  }
+
+  .name {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 }
