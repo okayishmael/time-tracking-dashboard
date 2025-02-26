@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- title -->
+  <title>Frontend Mentor | Time tracking dashboard | By: Ishmael Sunday</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+
+    <div class="aside rounded bg-dark-blue">
+      <div class="aside-content rounded">
+
+        <img id="profile-img" src="images/image-jeremy.png" alt="picture of Jeremy Robson">
+
+        <div class="profile-info">
+          <p class="label">Report for</p>
+          <h1 class="name">Jeremy Robson</h1>
+        </div>
+      </div>
+
+      <div class="nav">
+
+        <button id="daily" class="timeframe-btn text-DesaturatedBlue hover-text-PaleBlue"
+          data-view="daily">Daily</button>
+
+        <button id="weekly" class="timeframe-btn text-DesaturatedBlue hover-text-PaleBlue"
+          data-view="weekly">Weekly</button>
+
+        <button id="monthly" class="timeframe-btn text-DesaturatedBlue hover-text-PaleBlue"
+          data-view="monthly">Monthly</a>
+
+      </div>
+    </div>
+
+
+
+    <div class="data-contents">
+
+      <div class="data-content rounded red-work">
+        <div class="icon-right">
+          <img src="images/icon-work.svg" alt="" class="icon">
+        </div>
+        <div class="work rounded bg-dark-blue">
+          <div class="title">
+            <p>Work</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h2 id="work-current ">5hrs</h2>
+            <p id="work-previous" class="text-DesaturatedBlue">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-content rounded blue-play">
+
+        <div class="icon-right">
+          <img src="images/icon-play.svg" alt="" class="icon">
+        </div>
+        <div class="play rounded bg-dark-blue">
+          <div class="title">
+            <p>Play</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h2 id="play-current">1hr</h2>
+            <p id="play-previous" class="text-DesaturatedBlue">Previous - 2hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-content rounded red-study">
+        <div class="icon-right">
+          <img src="images/icon-study.svg" alt="" class="icon">
+        </div>
+        <div class="study rounded bg-dark-blue">
+          <div class="title">
+            <p>Study</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h2 id="study-current">0hrs</h2>
+            <p id="study-previous" class="text-DesaturatedBlue">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-content rounded green-exercise">
+        <div class="icon-right exercise-icon">
+          <img src="images/icon-exercise.svg" alt="" class="icon">
+        </div>
+        <div class="exercise rounded bg-dark-blue">
+          <div class="title">
+            <p>Exercise</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h2 id="exercise-current">1hr</h2>
+            <p id="exercise-previous" class="text-DesaturatedBlue">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-content rounded violet-social">
+        <div class="icon-right">
+          <img src="images/icon-social.svg" alt="" class="icon">
+        </div>
+        <div class="social rounded bg-dark-blue adjust">
+          <div class="title">
+            <p>Social</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h2 id="social-current">1hr</h2>
+            <p id="social-previous" class="text-DesaturatedBlue">Previous - 3hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-content rounded soft-orange-self-care ">
+        <div class="icon-right self-care-icon">
+          <img src="images/icon-self-care.svg" alt="" class="icon">
+        </div>
+        <div class="self-care rounded bg-dark-blue">
+          <div class="title">
+            <p>Self Care</p>
+            <img src="./images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="hours">
+            <h2 id="self-care-current">0hrs</h2>
+            <p id="self-care-previous" class="text-DesaturatedBlue">Previous - 1hr</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

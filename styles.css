@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blue: hsl(246, 80%, 60%);
+
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+  --white: hsl(0, 0%, 100%);
+
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --hover-Dark-blue: hsl(235, 46%, 30%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-blue: hsl(236, 100%, 87%);
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--white);
+  background-color: var(--Very-dark-blue);
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.timeframe-btn {
+  color: var(--Desaturated-blue);
+  &:hover {
+    cursor: pointer;
+    color: var(--Pale-blue);
+  }
+
+  &:focus {
+    color: var(--Pale-blue);
+  }
+}
+.red-work {
+  background-color: var(--Light-red-work);
+}
+
+.blue-play {
+  background-color: var(--Soft-blue-play);
+}
+
+.red-study {
+  background-color: var(--Light-red-study);
+}
+
+.green-exercise {
+  background-color: var(--Lime-green-exercise);
+}
+
+.violet-social {
+  background-color: var(--Violet-social);
+}
+
+.soft-orange-self-care {
+  background-color: var(--Soft-orange-self-care);
+}
+
+.bg-dark-blue {
+  background-color: var(--Dark-blue);
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.data-content {
+  margin-bottom: 2rem;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+  padding: 2rem 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--hover-Dark-blue);
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.title p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.text-DesaturatedBlue {
+  color: var(--Desaturated-blue);
+}
+#profile-img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+
+.aside {
+  margin-bottom: 2rem;
+}
+.aside-content {
+  background-color: var(--Blue);
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.nav {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.timeframe-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.active {
+  color: var(--Pale-blue);
+}
+.hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-right {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 0.5rem;
+}
+.exercise-icon {
+  padding: 0.8rem 0.5rem;
+}
+.self-care-icon {
+  padding: 0.8rem 0.5rem;
+}
+.adjust {
+  margin-top: -0.6rem;
+}
+
+@media (min-width: 43.75em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+    margin-bottom: 0;
+    max-width: 50rem;
+  }
+
+  .data-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+
+  .data-content {
+    margin-bottom: 0;
+    align-self: start;
+  }
+
+  #profile-img {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 62.5em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem;
+    margin-bottom: 0;
+    max-width: 70rem;
+  }
+  .aside {
+    width: 25%;
+  }
+  .aside-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 4rem;
+  }
+  #profile-img {
+    margin-bottom: 0;
+  }
+  .nav {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .data-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    width: 75%;
+  }
+
+  .data-content {
+    margin-bottom: 0;
+    align-self: start;
+  }
+  .hours {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
